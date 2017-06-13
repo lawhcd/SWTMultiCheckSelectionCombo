@@ -107,7 +107,7 @@ public class MultiCheckSelectionCombo extends Composite {
 		Point p = display.getParent().toDisplay(display.getLocation());
 		Point size = display.getSize();
 		Rectangle shellRect = new Rectangle(p.x, p.y + size.y, size.x, 0);
-		Shell shell = new Shell(MultiCheckSelectionCombo.this.getShell(), SWT.NO_TRIM);
+		Shell shell = new Shell(MultiCheckSelectionCombo.this.getShell(), SWT.BORDER);
 		shell.setLayout(new GridLayout());
 		
 		Button toggle = new Button(shell, SWT.BUTTON1);
